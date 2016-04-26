@@ -1,0 +1,126 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/**
+ *	EDITING RULES
+ *
+ *  	zigzagdish-alpha-default.css SHOULD NEVER be edited directly, 
+ *      but instead, the zigzagdish-alpha-default.less file should
+ *      be edited, then recompiled.
+ *
+ *	LESS COMPILING OPTIONS:
+ *
+ *		http://incident57.com/less/ (Mac app that will magically compile CSS each time you save)
+ *		* Output folder should default to ../css
+ *		http://lesscss.org/#-client-side-usage (See command line usage)
+ *		* lessc global.less > ../css/global.css
+ *      http://crunchapp.net/ (Little windows app that will "Crunch"/compile your LESS)
+ */
+body.one-sidebar.sidebar-second #zone-content,
+body.two-sidebars #zone-content {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(66%, #ffffff), color-stop(66%, #f7f8f5), color-stop(100%, #f7f8f5), color-stop(100%, #f7f8f5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f8f5', GradientType=1);
+  /* IE6-9 */
+}
+body.front #zone-preface {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(66%, #ffffff), color-stop(66%, #f7f8f5), color-stop(100%, #f7f8f5), color-stop(100%, #f7f8f5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 66%, #f7f8f5 66%, #f7f8f5 100%, #f7f8f5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f8f5', GradientType=1);
+  /* IE6-9 */
+}
+#zone-branding #region-branding .logo-img {
+  float: left;
+}
+#zone-branding #region-branding-secondary .region-inner {
+  background: url('../img/gradient-border.png') right center no-repeat;
+  padding-right: 30px;
+}
+/* navigation */
+#region-menu nav.navigation {
+  display: block;
+}
+#region-menu nav.mobile-main-nav {
+  display: none;
+}
+#section-content .zone #region-preface-main #region-preface-first {
+  margin-right: 10px;
+}
+#section-content .zone #region-preface-main #region-preface-second {
+  margin-left: 10px;
+}
+h1#page-title {
+  font-size: 36px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+/* special front page stuff */
+.front #block-views-tips-and-tools-block .content {
+  background: url('../img/illustration-peach-and-peanut-smile.png') center left no-repeat;
+  padding-left: 330px;
+  padding-top: 0px;
+}
+.front #block-views-tips-and-tools-block .content .unordered-list ul {
+  padding-left: 10px;
+}
+.front #block-views-featured-recipes-block .views-row,
+.view-id-recipes .views-row {
+  float: left;
+  width: 33%;
+}
+.front #block-views-featured-recipes-block .views-row .views-field,
+.view-id-recipes .views-row .views-field {
+  margin: 4px 8px;
+}
+/* tips and tools */
+.view-tips-and-tools.view-display-id-page .views-row .views-field-field-gallery {
+  width: 150px;
+}
+.view-id-resources .views-row {
+  float: left;
+  width: 33%;
+  min-height: 250px;
+}
+/* videos */
+.view-videos .views-row {
+  overflow: hidden;
+  clear: both;
+  margin: 20px;
+  text-align: left;
+}
+.view-videos .views-field-title {
+  padding-left: 250px;
+  font-size: 18px;
+}
+.view-videos .views-field-field-video {
+  float: left;
+}
+.view-videos .views-field-view-node {
+  padding-left: 250px;
+  margin-top: 40px;
+}
+.view-videos .views-field-view-node a {
+  text-decoration: none;
+}

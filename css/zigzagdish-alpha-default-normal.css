@@ -1,0 +1,40 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/**
+ *	EDITING RULES
+ *
+ *  	zigzagdish-alpha-default-normal.css SHOULD NEVER be edited directly, 
+ *      but instead, the zigzagdish-alpha-default-normal.less file should
+ *      be edited, then recompiled.
+ *
+ *	LESS COMPILING OPTIONS:
+ *
+ *		http://incident57.com/less/ (Mac app that will magically compile CSS each time you save)
+ *		* Output folder should default to ../css
+ *		http://lesscss.org/#-client-side-usage (See command line usage)
+ *		* lessc global.less > ../css/global.css
+ *      http://crunchapp.net/ (Little windows app that will "Crunch"/compile your LESS)
+ */
+#zone-branding #region-branding-secondary .region-inner {
+  padding-right: 50px;
+}
+#zone-branding #region-branding-tertiary .region-inner {
+  padding: 20px 30px 10px 30px;
+}
+.node-type-recipe article.node-recipe .field-name-field-image {
+  float: left;
+  margin-right: 10px;
+  max-width: 360px;
+}
+.node-type-recipe article.node-recipe .recipe-summary {
+  /* bring back some styles from recipe module */
+  clear: left;
+  float: right;
+  margin: 0;
+  width: 20em;
+}
+.node-type-recipe article.node-recipe .recipe-section {
+  width: 350px;
+}
+/*# sourceMappingURL=zigzagdish-alpha-default-normal.css.map */

@@ -1,0 +1,20 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+/**
+ *	EDITING RULES
+ *
+ *  	zigzagdish-alpha-default-narrow.css SHOULD NEVER be edited directly, 
+ *      but instead, the zigzagdish-alpha-default-narrow.less file should
+ *      be edited, then recompiled.
+ *
+ *	LESS COMPILING OPTIONS:
+ *
+ *		http://incident57.com/less/ (Mac app that will magically compile CSS each time you save)
+ *		* Output folder should default to ../css
+ *		http://lesscss.org/#-client-side-usage (See command line usage)
+ *		* lessc global.less > ../css/global.css
+ *      http://crunchapp.net/ (Little windows app that will "Crunch"/compile your LESS)
+ */
+/*# sourceMappingURL=zigzagdish-alpha-default-narrow.css.map */
