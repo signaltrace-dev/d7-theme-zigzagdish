@@ -736,3 +736,11 @@ fieldset.webform-component--height .form-item {
   float: left;
   margin-right: 20px;
 }
+.image-field-caption {
+  background: #f7f8f5;
+  padding: 10px;
+  font-size: 12px;
+}
+.image-field-caption p {
+  margin: 0;
+}
