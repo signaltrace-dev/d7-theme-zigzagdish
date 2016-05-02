@@ -722,6 +722,7 @@ fieldset.webform-component--height .form-item {
 }
 .node-type-blog-post .field-name-field-gallery .field-item {
   float: left;
+  margin: 5px 10px;
 }
 .node-type-blog-post .field-name-field-addthis-sharing {
   clear: both;
