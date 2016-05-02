@@ -745,3 +745,12 @@ fieldset.webform-component--height .form-item {
 .image-field-caption p {
   margin: 0;
 }
+.addthis-animated {
+  text-align: center;
+}
+.addthis-animated p span {
+  display: none;
+}
+.addthis-animated .addthis_toolbox {
+  display: inline-block;
+}
