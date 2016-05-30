@@ -724,10 +724,36 @@ fieldset.webform-component--height .form-item {
   }
 }
 
+figure {
+    display: table;
+}
+
+figure > figcaption{
+  display: table-caption;
+  caption-side: bottom;
+}
+
+.image-caption-container {
+    height: auto !important;
+  margin: 10px 0;
+}
+
+.image-caption-container-left{
+  margin-right: 10px;
+}
+
+.image-caption-container-right{
+  margin-left: 10px;
+}
+
+.image-caption,
 .image-field-caption {
+  text-align: center;
   background: #f7f8f5;
   padding: 10px;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: normal;
   p{
     margin: 0;
   }
@@ -742,5 +768,64 @@ fieldset.webform-component--height .form-item {
   }
   .addthis_toolbox{
     display: inline-block;
+  }
+}
+
+.view-learn-online{
+  .item-lesson {
+      float: left;
+      max-width: 27%;
+      padding: 3%;
+      border-right: 1px solid #dadada;
+  }
+
+  .item-title a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 20px;
+  }
+
+  .item-title {
+      margin-bottom: 10px;
+  }
+
+  .item-image {
+      max-height: 175px;
+      overflow: hidden;
+      min-height: 175px;
+      margin-bottom: 10px;
+      line-height: 175px;
+  }
+
+  .item-body {
+      font-size: 12px;
+      min-height: 180px;
+      max-height: 180px;
+  }
+
+  .btn.btn-start {
+      text-align: center;
+      padding: 10px 5px;
+  }
+
+  .btn.btn-start a {
+      text-decoration: none;
+      color: #fff;
+      background: #25A53B;
+      display: block;
+      padding: 7px 10px;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 8px;
+  }
+
+  .views-row-last.item.item-lesson {
+      border: none;
+  }
+
+  .item-image img {
+      vertical-align: middle;
   }
 }
