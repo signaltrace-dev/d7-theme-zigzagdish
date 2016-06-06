@@ -295,46 +295,43 @@ h1#page-title {
   left: 0;
 }
 #region-menu nav.mobile-main-nav {
-  background: #330e5c;
-  display: block;
-  margin-top: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  -webkit-border-radius: 0 36px 0 36px;
-  border-radius: 0 36px 0 36px;
-  -moz-transform: rotate(5deg) skewX(5deg) skewY(5deg);
-  -webkit-transform: rotate(5deg) skewX(5deg) skewY(5deg);
-  -o-transform: rotate(5deg) skewX(5deg) skewY(5deg);
-  -ms-transform: rotate(5deg) skewX(5deg) skewY(5deg);
-  transform: rotate(5deg) skewX(5deg) skewY(5deg);
-}
-#region-menu nav.mobile-main-nav ul {
-  color: #fff;
-  list-style-type: none;
-  text-align: center;
-  -moz-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
-  -webkit-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
-  -o-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
-  -ms-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
-  transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
-}
-#region-menu nav.mobile-main-nav ul li {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.6em;
-  font-weight: 700;
-}
-#region-menu nav.mobile-main-nav ul li a,
-#region-menu nav.mobile-main-nav ul li span.nolink {
-  color: #FFF;
-  text-decoration: none;
-}
-#region-menu nav.mobile-main-nav ul li a.active,
-#region-menu nav.mobile-main-nav ul li span.nolink.active,
-#region-menu nav.mobile-main-nav ul li a.hover,
-#region-menu nav.mobile-main-nav ul li span.nolink.hover,
-#region-menu nav.mobile-main-nav ul li a.focus,
-#region-menu nav.mobile-main-nav ul li span.nolink.focus {
-  text-decoration: underline;
+  display: none;
+  /*
+    background: darken(#7c25de, 30%);
+    display: block;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    -webkit-border-radius: 0 36px 0 36px;
+    border-radius: 0 36px 0 36px;
+    -moz-transform: rotate(5deg) skewX(5deg) skewY(5deg);
+    -webkit-transform: rotate(5deg) skewX(5deg) skewY(5deg);
+    -o-transform: rotate(5deg) skewX(5deg) skewY(5deg);
+    -ms-transform: rotate(5deg) skewX(5deg) skewY(5deg);
+    transform: rotate(5deg) skewX(5deg) skewY(5deg);
+    ul {
+      color: #fff;
+      list-style-type: none;
+      text-align: center;
+      -moz-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
+      -webkit-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
+      -o-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
+      -ms-transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
+      transform: rotate(-5deg) skewX(-5deg) skewY(-5deg);
+
+	  li {
+        font-family: @altHeaderFont;
+        font-size: 1.6em;
+        font-weight: 700;
+        a, span.nolink {
+          color: #FFF;
+          text-decoration: none;
+          &.active, &.hover, &.focus {
+            text-decoration: underline;
+          }
+        }
+	  }
+    }*/
 }
 #navigation {
   overflow: hidden;
@@ -696,27 +693,6 @@ fieldset.webform-component--height .form-item {
 .view-reports ul {
   list-style-position: inside;
 }
-@media screen and (max-width: 600px) {
-  #sco-node-wrapper {
-    height: 300px;
-  }
-  .desktop {
-    display: none;
-  }
-  .iframe-wrapper .field-iframe-instance {
-    position: relative;
-    padding-bottom: 137.25%;
-    height: 0;
-    overflow: hidden;
-  }
-  .iframe-wrapper .field-iframe-instance iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
 .view-id-recipes .views-row {
   min-height: 250px;
 }
@@ -757,6 +733,8 @@ figure > figcaption {
 .image-caption,
 .image-field-caption {
   text-align: center;
+  color: #000;
+  text-decoration: none;
   background: #f7f8f5;
   padding: 10px;
   font-size: 11px;
@@ -802,7 +780,7 @@ figure > figcaption {
 .view-learn-online .item-body {
   font-size: 12px;
   min-height: 180px;
-  max-height: 180px;
+  max-height: none;
 }
 .view-learn-online .btn.btn-start {
   text-align: center;
@@ -823,4 +801,79 @@ figure > figcaption {
 }
 .view-learn-online .item-image img {
   vertical-align: middle;
+}
+@media screen and (max-width: 740px) {
+  #zone-branding-wrapper {
+    margin-bottom: 20px;
+  }
+  #zone-branding {
+    padding: 0 1%;
+  }
+  #region-branding,
+  #region-branding-tertiary {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  #region-branding-secondary {
+    display: none;
+  }
+  .view-learn-online .item-lesson {
+    float: none;
+    max-width: none;
+    text-align: center;
+    padding: 3%;
+    border-right: none;
+    border-bottom: 1px solid #dadada;
+  }
+  .view-learn-online .item-lesson .item-title a {
+    font-size: 18px;
+  }
+  .view-learn-online .item-lesson .item-body {
+    font-size: 14px;
+    min-height: initial;
+    max-height: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*
+  .view-learn-online{
+    .item-lesson {
+      float: none;
+      max-width: none;
+      text-align: center;
+      padding: 3%;
+      border-right: none;
+      border-bottom: 1px solid #dadada;
+      .item-title{
+        a{
+          font-size: 18px;
+        }
+      }
+      .item-body{
+        font-size: 14px;
+        min-height: initial;
+        max-height: none;
+      }
+    }
+  }*/
+  #sco-node-wrapper {
+    height: 300px;
+  }
+  .desktop {
+    display: none;
+  }
+  .iframe-wrapper .field-iframe-instance {
+    position: relative;
+    padding-bottom: 137.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  .iframe-wrapper .field-iframe-instance iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
