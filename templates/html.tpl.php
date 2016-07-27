@@ -15,7 +15,8 @@
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=405934022864583&ev=PageView&noscript=1"/></noscript>
 <!-- End Facebook Pixel Code -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ced64a5d764f66" async="async"></script>
-
+</head>
+<body<?php print $attributes;?>>
 <!-- Google Code for adwords conversion Conversion Page
 In your html page, add the snippet and call
 goog_report_conversion when someone clicks on the
@@ -46,9 +47,6 @@ chosen link or button. -->
   /* ]]> */
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
-
-</head>
-<body<?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
