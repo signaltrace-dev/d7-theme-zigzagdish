@@ -357,3 +357,4 @@ css[zigzagdish-print.css][description] = Styles for printer
 css[zigzagdish-print.css][options][weight] = 100
 css[zigzagdish-print.css][options][media] = print
 version = '1.x'
+scripts[] = 'js/custom.js'
